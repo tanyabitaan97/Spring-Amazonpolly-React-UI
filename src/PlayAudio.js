@@ -20,7 +20,7 @@ function PlayAudio() {
     formData.append('file', selectedFile);
 
     try {
-      const response = await fetch('http://54.183.249.38:5000/upload', {
+      const response = await fetch('http://16.171.113.140:5000/upload', {
         method: 'POST',
         body: formData,
       });
@@ -34,7 +34,7 @@ console.log("Explanation:", explanation);
         setUploadStatus('File uploaded successfully!');
         //call java backend to convert explanation into audio
 
-      await fetch('http://54.183.249.38:8088/generate/audio', {
+      await fetch('http://16.171.113.140:8088/generate/audio', {
       method: 'POST',
       body: JSON.stringify({ "explanation":explanation }),
       headers: { 'Content-Type': 'application/json' }
