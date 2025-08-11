@@ -61,7 +61,7 @@ return (
   </div>
 
   <audio controls className="audio-player">
-    <source src="https://s3-assignment1-intellipaat.s3.amazonaws.com/polly-output-en.mp3" type="audio/mpeg" />
+    <source src="https://s3-assignment1-intellipaat.s3.us-east-1.amazonaws.com/polly-output-en.mp3" type="audio/mpeg" />
     Your browser does not support the audio element.
   </audio>
 </div>
